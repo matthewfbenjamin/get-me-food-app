@@ -1,0 +1,3 @@
+export const GET_CAFES = 'GET_CAFES'
+export const GET_CAFES_SUCCESS = 'GET_CAFES_SUCCESS'
+export const GET_CAFES_FAIL = 'GET_CAFES_FAIL'
