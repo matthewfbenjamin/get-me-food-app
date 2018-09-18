@@ -1,3 +1,3 @@
-export const GET_CAFES = 'GET_CAFES'
-export const GET_CAFES_SUCCESS = 'GET_CAFES_SUCCESS'
-export const GET_CAFES_FAIL = 'GET_CAFES_FAIL'
+export const SET_CAFE = 'SET_CAFE'
+export const SET_RESTAURANT = 'SET_RESTAURANT'
+export const SET_BAR = 'SET_BAR'

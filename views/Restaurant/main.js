@@ -8,10 +8,22 @@ const Main = (props) => {
         Restaurant Page
       </Text>
       <Button
-        onPress={props.getCafes}
+        onPress={props.dataActions.setCafe}
         title="Cafes"
         color="#841584"
-        accessibilityLabel="Get Cafes"
+        accessibilityLabel="Cafes"
+      />
+      <Button
+        onPress={props.dataActions.setRestaurant}
+        title="Restaurants"
+        color="#841584"
+        accessibilityLabel="Restaurants"
+      />
+      <Button
+        onPress={props.dataActions.setBar}
+        title="Bars"
+        color="#841584"
+        accessibilityLabel="Bars"
       />
     </View>
   )

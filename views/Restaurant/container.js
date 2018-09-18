@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Actions as routerActions } from 'react-native-router-flux';
+import { bindActionCreators } from 'redux'
 
 import Main from './main'
 import { actions } from '../../data'
 class Container extends Component {
-  componentDidUpdate(prevProps, prevState) {
-    console.log('this.state: ', this.props.cafes)
-    console.log('prevProps: ', prevProps.cafes)
-    if (
-      (prevProps.cafes.loading && !this.props.cafes.loading) &&
-      (!prevProps.cafes.finished && this.props.cafes.finished)) {
+  componentDidUpdate(prevProps) {
+    console.log(prevProps)
+    console.log(this.props)
+    if (prevProps.searchTerm !== this.props.searchTerm) {
         routerActions.distance()
       }
   }
+
   render () {
     return (
       <Main {...this.props} />
@@ -23,12 +23,15 @@ class Container extends Component {
 
 const mapStateToProps = state => {
   return {
-    cafes: state.cafes
+    searchTerm: state.searchTerm
   }
 }
 
-const mapDispatchToProps = {
-  getCafes: actions.getCafes
+function mapDispatchToProps(dispatch) {
+  return {
+    dataActions: bindActionCreators(actions, dispatch),
+    dispatch: dispatch,
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Container);
