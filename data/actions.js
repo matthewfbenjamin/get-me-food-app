@@ -14,16 +14,24 @@ export function getCafes(location) {
 }
 */
 
-// export const setCafe = () => ({ type: c.SET_CAFE })
+export const setCafe = () => ({ type: c.SET_CAFE })
 export const setRestaurant = () => ({ type: c.SET_RESTAURANT })
-// export const setBar = () => function(dispatch) { dispatch({ type: c.SET_BAR }) }
+export const setBar = () => ({ type: c.SET_BAR })
+export const setThreeMinutes = () => ({ type: c.SET_THREE_MINUTES })
+export const setTenMinutes = () => ({ type: c.SET_TEN_MINUTES })
+export const setTwentyMinutes = () => ({ type: c.SET_TWENTY_MINUTES })
 
-export function setBar(text) {
-  return { type: c.SET_BAR }
-}
+const setLocationBegin = () => ({ type: c.SET_LOCATION_BEGIN })
+const setLocationSuccess = (coords) => ({ type: c.SET_LOCATION_SUCCESS, latitude: coords.latitude, longitude: coords.longitude })
+const setLocationFail = (errorMessage) => ({ type: c.SET_LOCATION_FAIL, errorMessage })
 
-export function setCafe() {
-  return {
-    type: c.SET_CAFE,
+export const getLocation = (navigator) => {
+  return (dispatch) => {
+    dispatch(setLocationBegin)
+    navigator.geolocation.getCurrentPosition(
+      (position) => dispatch(setLocationSuccess(position.coords)),
+      (error) => dispatch(setLocationFail(error.message)),
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
+    )
   }
 }

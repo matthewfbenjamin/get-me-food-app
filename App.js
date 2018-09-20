@@ -6,6 +6,7 @@ import { Scene, Router, Actions, Reducer, ActionConst, Overlay, Tabs, Modal, Dra
 import store from './store'
 import Restaurant from './views/Restaurant'
 import Distance from './views/Distance'
+import Money from './views/Money'
 
 export default class App extends Component {
   render() {
@@ -16,6 +17,7 @@ export default class App extends Component {
             <Stack key="root">
               <Scene key="restaurant" component={Restaurant} title="Restaurant" />
               <Scene key="distance" component={Distance} title="Distance" />
+              <Scene key="money" component={Money} title="Money" />
             </Stack>
           </Router>
         </View>

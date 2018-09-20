@@ -6,18 +6,15 @@ import { bindActionCreators } from 'redux'
 import Main from './main'
 import { actions } from '../../data'
 class Container extends Component {
-  componentDidMount () {
-    // console.log(navigator.geolocation)
-    dataActions.getLocation(navigator)
+  componentDidUpdate(prevProps) {
+    console.log(prevProps)
+    console.log(this.props)
+    if (prevProps.searchRadius !== this.props.searchRadius) {
+      routerActions.distance()
+    }
   }
 
-  componentDidUpdate (prevProps) {
-    if (prevProps.searchTerm !== this.props.searchTerm) {
-        routerActions.distance()
-      }
-  }
-
-  render () {
+  render() {
     return (
       <Main {...this.props} />
     );
@@ -26,7 +23,7 @@ class Container extends Component {
 
 const mapStateToProps = state => {
   return {
-    searchTerm: state.searchTerm
+    searchRadius: state.searchRadius
   }
 }
 
