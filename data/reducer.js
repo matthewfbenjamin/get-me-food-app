@@ -1,7 +1,16 @@
 import * as c from './constants'
 
 const initState = {
-  searchTerm: ''
+  searchTerm: '',
+  location: {
+    requesting: false,
+    error: null,
+    latitude: null,
+    longitude: null,
+  },
+  money: [],
+  limit: 20,
+  offset: 0,
 }
 
 export default function reducer(state = initState, action) {
@@ -36,6 +45,37 @@ export default function reducer(state = initState, action) {
       return {
         ...state,
         searchRadius: 2000,
+      }
+    case c.SET_LOCATION_BEGIN:
+      return {
+        ...state,
+        location: {
+          ...state.location,
+          requesting: true,
+        },
+      }
+    case c.SET_LOCATION_SUCCESS:
+      return {
+        ...state,
+        location: {
+          ...state.location,
+          requesting: false,
+          latitude: action.latitude,
+          longitude: action.longitude,
+        },
+      }
+    case c.SET_LOCATION_FAIL:
+      return {
+        ...state,
+        location: {
+          ...state.location,
+          error: action.errorMessage,
+        },
+      }
+    case c.SET_MONEY_ARRAY:
+      return {
+        ...state,
+        money: action.moneyArray,
       }
     default:
       return state;

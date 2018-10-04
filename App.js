@@ -7,7 +7,7 @@ import store from './store'
 import Restaurant from './views/Restaurant'
 import Distance from './views/Distance'
 import Money from './views/Money'
-
+import Results from './views/Results'
 export default class App extends Component {
   render() {
     return (
@@ -18,6 +18,7 @@ export default class App extends Component {
               <Scene key="restaurant" component={Restaurant} title="Restaurant" />
               <Scene key="distance" component={Distance} title="Distance" />
               <Scene key="money" component={Money} title="Money" />
+              <Scene key="results" component={Results} title="Results" />
             </Stack>
           </Router>
         </View>

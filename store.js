@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import axiosMiddleware from 'redux-axios-middleware';
 import { createStore, applyMiddleware } from 'redux'
+import thunkMiddleware from 'redux-thunk'
 
 import {reducer} from './data'
 
@@ -11,7 +12,11 @@ const client = axios.create({
   headers: { 'Authorization': 'Bearer dvhgw8axIEU5a4Pi0mR-u9qtif5zv8X0qELiBPsOShlYjEKWjx9wRGl4f_SkaC-_07Eij24LQjzZnq4-ge_ShAv_ngMod8PTNwnPNNwrRLATeuyvWulG3_BMChx4W3Yx' }
 });
 
-const store = createStore(reducer, applyMiddleware(axiosMiddleware(client)))
+const middleware = []
+middleware.push(thunkMiddleware)
+middleware.push(axiosMiddleware(client))
+
+const store = createStore(reducer, applyMiddleware(...middleware))
 
 export default store
 

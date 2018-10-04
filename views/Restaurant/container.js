@@ -8,7 +8,7 @@ import { actions } from '../../data'
 class Container extends Component {
   componentDidMount () {
     // console.log(navigator.geolocation)
-    dataActions.getLocation(navigator)
+    this.props.dataActions.getLocation(navigator)
   }
 
   componentDidUpdate (prevProps) {
@@ -26,7 +26,7 @@ class Container extends Component {
 
 const mapStateToProps = state => {
   return {
-    searchTerm: state.searchTerm
+    searchTerm: state.searchTerm,
   }
 }
 

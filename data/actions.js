@@ -1,13 +1,13 @@
 import * as c from './constants'
 
 /*
-export function getCafes(location) {
+export function getResults(searchTerm, latitude, longitude, searchRadius, moneyString) {
   console.log('in action')
   return {
-    type: c.GET_CAFES,
+    type: c.GET_RESULTS,
     payload: {
       request: {
-        url: `/businesses/search?term=cafe&latitude=40.781480&longitude=-73.949600`
+        url: `/businesses/search?term=${searchTerm}&latitude=${latitude}&longitude=${longitude}&radius=${searchRadius}&price=${moneyString}`
       }
     }
   };
@@ -20,13 +20,13 @@ export const setBar = () => ({ type: c.SET_BAR })
 export const setThreeMinutes = () => ({ type: c.SET_THREE_MINUTES })
 export const setTenMinutes = () => ({ type: c.SET_TEN_MINUTES })
 export const setTwentyMinutes = () => ({ type: c.SET_TWENTY_MINUTES })
-
+export const setMoneyArray = (moneyArray) => ({ type: c.SET_MONEY_ARRAY, moneyArray })
 const setLocationBegin = () => ({ type: c.SET_LOCATION_BEGIN })
 const setLocationSuccess = (coords) => ({ type: c.SET_LOCATION_SUCCESS, latitude: coords.latitude, longitude: coords.longitude })
 const setLocationFail = (errorMessage) => ({ type: c.SET_LOCATION_FAIL, errorMessage })
 
-export const getLocation = (navigator) => {
-  return (dispatch) => {
+export function getLocation (navigator) {
+  return function (dispatch) {
     dispatch(setLocationBegin)
     navigator.geolocation.getCurrentPosition(
       (position) => dispatch(setLocationSuccess(position.coords)),
