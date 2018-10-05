@@ -14,6 +14,10 @@ export const globalStyles = StyleSheet.create({
   selectedButton: {
     backgroundColor: 'blue',
   },
+  buttonWrapper: {
+    flex: 2,
+    justifyContent: 'space-around',
+  }
 })
 
 export const peach = '#FFB86F'

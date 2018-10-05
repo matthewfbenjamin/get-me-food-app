@@ -10,6 +10,9 @@ class Container extends Component {
     if (prevProps.searchRadius !== this.props.searchRadius) {
       routerActions.money()
     }
+    if (this.props.scene === 'distance' && prevProps.scene === 'money') {
+      this.props.dataActions.clearDistance()
+    }
   }
 
   render() {
@@ -21,7 +24,7 @@ class Container extends Component {
 
 const mapStateToProps = state => {
   return {
-    searchRadius: state.searchRadius
+    searchRadius: state.data.searchRadius
   }
 }
 

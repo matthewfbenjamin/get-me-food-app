@@ -1,11 +1,13 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View } from 'react-native';
 import Button from '../components/Button'
+import { globalStyles } from '../components/Styles'
+
 const Main = (props) => {
   return (
-    <View style={styles.container}>
+    <View style={globalStyles.viewContainer}>
       <View style={{flex: 1}} />
-      <View style={styles.buttonWrapper}>
+      <View style={globalStyles.buttonWrapper}>
         <Button
           onPress={props.dataActions.setCafe}
           title="Cafes"
@@ -23,16 +25,5 @@ const Main = (props) => {
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#BA5C12',
-  },
-  buttonWrapper: {
-    flex: 2,
-    justifyContent: 'space-around',
-  }
-})
 
 export default Main

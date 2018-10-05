@@ -10,21 +10,8 @@ export default function reducer(state = initialState, action = {}) {
     case ActionConst.FOCUS:
       return {
         ...state,
-        scene: action.scene,
+        scene: action.routeName,
       }
-    case ActionConst.BACK_ACTION:
-      console.log(action)
-      console.log(state)
-      return {
-        ...state
-      }
-    case ActionConst.FOCUS:
-      console.log(action)
-      console.log(state)
-      return {
-        ...state
-      }
-
     default:
       return state;
   }

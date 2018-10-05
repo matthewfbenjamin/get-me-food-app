@@ -13,10 +13,11 @@ export function getResults(searchTerm, latitude, longitude, searchRadius, moneyS
   };
 }
 */
-
+export const clearSearchTerm = () => ({ type: c.CLEAR_SEARCH_TERM })
 export const setCafe = () => ({ type: c.SET_CAFE })
 export const setRestaurant = () => ({ type: c.SET_RESTAURANT })
 export const setBar = () => ({ type: c.SET_BAR })
+export const clearDistance = () => ({ type: c.CLEAR_DISTANCE })
 export const setThreeMinutes = () => ({ type: c.SET_THREE_MINUTES })
 export const setTenMinutes = () => ({ type: c.SET_TEN_MINUTES })
 export const setTwentyMinutes = () => ({ type: c.SET_TWENTY_MINUTES })

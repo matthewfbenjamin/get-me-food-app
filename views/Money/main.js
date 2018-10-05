@@ -1,62 +1,56 @@
 import React from 'react';
-import { View, Text, StyleSheet, FlatList, TouchableOpacity, Button } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+
+import Button from '../components/Button'
+import {globalStyles, indigo, peach} from '../components/Styles'
 
 const Main = (props) => {
-  const { moneyValues, selectMoney } = props
   return (
-    <View style={styles.container}>
-      <TouchableOpacity
-        style={[styles.button, props[1].selected && styles.selectedButton]}
-        onPress={() => props.selectMoney(1)}
-      >
-        <Text>{props[1].title}</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={[styles.button, props[2].selected && styles.selectedButton]}
-        onPress={() => props.selectMoney(2)}
-      >
-        <Text>{props[2].title}</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={[styles.button, props[3].selected && styles.selectedButton]}
-        onPress={() => props.selectMoney(3)}
-      >
-        <Text>{props[3].title}</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={[styles.button, props[4].selected && styles.selectedButton]}
-        onPress={() => props.selectMoney(4)}
-      >
-        <Text>{props[4].title}</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        // style={[styles.button, props.four.selected && styles.selectedButton]}
-        onPress={props.showResults}
-      >
-        <Text>Next</Text>
-      </TouchableOpacity>
+    <View style={globalStyles.viewContainer}>
+      <View style={{ flex: 1 }} />
+      <View style={globalStyles.buttonWrapper}>
+        <Button
+          onPress={() => props.selectMoney(1)}
+          title={props[1].title}
+          additionalBtnStyle={props[1].selected && styles.selectedButton}
+          additionalTextStyle={props[1].selected && styles.selectedText}
+        />
+        <Button
+          onPress={() => props.selectMoney(2)}
+          title={props[2].title}
+          additionalBtnStyle={props[2].selected && styles.selectedButton}
+          additionalTextStyle={props[2].selected && styles.selectedText}
+        />
+        <Button
+          onPress={() => props.selectMoney(3)}
+          title={props[3].title}
+          additionalBtnStyle={props[3].selected && styles.selectedButton}
+          additionalTextStyle={props[3].selected && styles.selectedText}
+        />
+        <Button
+          onPress={() => props.selectMoney(4)}
+          title={props[4].title}
+          additionalBtnStyle={props[4].selected && styles.selectedButton}
+          additionalTextStyle={props[4].selected && styles.selectedText}
+        />
+      </View>
+      <View style={{ flex: 1, justifyContent: 'center' }}>
+        <Button
+          onPress={props.showResults}
+          title={'Next'}
+        />
+      </View>
+      <View style={{flex: 1}} />
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    paddingTop: 60,
-    alignItems: 'center'
-  },
-  button: {
-    margin: 10,
-    alignItems: 'center',
-    backgroundColor: '#DDDDDD',
-    padding: 10,
-    width: '95%',
-  },
   selectedButton: {
-    backgroundColor: 'blue',
+    backgroundColor: indigo,
   },
-  buttonText: {
-    padding: 20,
-    color: 'white'
+  selectedText: {
+    color: peach
   }
 })
 

@@ -4,24 +4,17 @@ import { Provider } from 'react-redux'
 import { Scene, Router, Stack, Actions as RouterActions } from 'react-native-router-flux';
 import { globalStyles, peach } from './views/components/Styles'
 
-import store from './store'
-import Restaurant from './views/Restaurant'
-import Distance from './views/Distance'
-import Money from './views/Money'
-import Results from './views/Results'
+import routes from './routes'
+import store, { ReduxNavigator, ReduxRouter } from './store'
 
 export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
         <View style={styles.container}>
-          <Router headerTitleStyle={globalStyles.text} headerStyle={{ backgroundColor: peach}}>
-              <Stack key="root">
-              <Scene key="restaurant" component={Restaurant} title="Restaurant" />
-              <Scene key="distance" back onBack={RouterActions.pop} component={Distance} title="Distance" />
-              <Scene key="money" component={Money} title="Money" />
-              <Scene key="results" component={Results} title="Results" />
-            </Stack>
+          {/* <ReduxRouter navigator={ReduxNavigator} /> */}
+          <Router>
+            {routes}
           </Router>
         </View>
       </Provider>

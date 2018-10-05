@@ -29,7 +29,6 @@ class Container extends Component {
       },
       selectedArray: [],
     }
-    // autobind(this)
   }
 
   selectMoney = (value) => {

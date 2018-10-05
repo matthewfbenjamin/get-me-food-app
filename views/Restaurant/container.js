@@ -11,11 +11,12 @@ class Container extends Component {
   }
 
   componentDidUpdate (prevProps) {
-    // console.log(prevProps)
-    // console.log(this.props)
-    if (prevProps.searchTerm !== this.props.searchTerm) {
-        routerActions.distance()
-      }
+    if (prevProps.searchTerm !== this.props.searchTerm && this.props.searchTerm.length > 0) {
+      routerActions.distance()
+    }
+    if (this.props.scene === 'restaurant' && prevProps.scene !== 'restaurant') {
+      this.props.dataActions.clearSearchTerm()
+    }
   }
 
   render () {
@@ -26,9 +27,9 @@ class Container extends Component {
 }
 
 const mapStateToProps = state => {
-  // console.log(state)
   return {
     searchTerm: state.data.searchTerm,
+    scene: state.router.scene
   }
 }
 

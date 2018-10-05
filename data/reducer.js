@@ -31,6 +31,12 @@ export default function reducer(state = initState, action) {
         ...state,
         searchTerm: 'bar'
       }
+    case c.CLEAR_SEARCH_TERM: {
+      return {
+        ...state,
+        searchTerm: '',
+      }
+    }
     case c.SET_THREE_MINUTES:
       return {
         ...state,
@@ -45,6 +51,11 @@ export default function reducer(state = initState, action) {
       return {
         ...state,
         searchRadius: 2000,
+      }
+    case c.CLEAR_DISTANCE:
+      return {
+        ...state,
+        searchRadius: null,
       }
     case c.SET_LOCATION_BEGIN:
       return {

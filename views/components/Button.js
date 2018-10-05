@@ -3,10 +3,10 @@ import { Text, StyleSheet, TouchableOpacity } from 'react-native'
 import { peach, indigo } from './Styles'
 const Button = (props) => (
   <TouchableOpacity
-    style={styles.button}
+    style={[styles.button, props.additionalBtnStyle]}
     onPress={props.onPress}
   >
-    <Text style={styles.text}>{props.title.toUpperCase()}</Text>
+    <Text style={[styles.text, props.additionalTextStyle]}>{props.title.toUpperCase()}</Text>
   </TouchableOpacity>
 )
 
