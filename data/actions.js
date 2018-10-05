@@ -1,8 +1,6 @@
 import * as c from './constants'
 
-/*
-export function getResults(searchTerm, latitude, longitude, searchRadius, moneyString) {
-  console.log('in action')
+getYelpResults = (searchTerm, latitude, longitude, searchRadius, moneyString) => {
   return {
     type: c.GET_RESULTS,
     payload: {
@@ -12,7 +10,7 @@ export function getResults(searchTerm, latitude, longitude, searchRadius, moneyS
     }
   };
 }
-*/
+
 export const clearSearchTerm = () => ({ type: c.CLEAR_SEARCH_TERM })
 export const setCafe = () => ({ type: c.SET_CAFE })
 export const setRestaurant = () => ({ type: c.SET_RESTAURANT })
@@ -34,5 +32,12 @@ export function getLocation (navigator) {
       (error) => dispatch(setLocationFail(error.message)),
       { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
     )
+  }
+}
+
+export function getResults(searchTerm, latitude, longitude, searchRadius, moneyString) {
+  return async function (dispatch) {
+    const results = await dispatch(getYelpResults(searchTerm, latitude, longitude, searchRadius, moneyString))
+    console.log(results)
   }
 }

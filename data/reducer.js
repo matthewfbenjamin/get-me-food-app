@@ -11,6 +11,10 @@ const initState = {
   money: [],
   limit: 20,
   offset: 0,
+  results: {
+    loading: true,
+    results: {},
+  }
 }
 
 export default function reducer(state = initState, action) {
@@ -87,6 +91,14 @@ export default function reducer(state = initState, action) {
       return {
         ...state,
         money: action.moneyArray,
+      }
+    case c.GET_RESULTS:
+      return {
+        ...state,
+        results: {
+          ...state.results,
+          loading: true,
+        }
       }
     default:
       return state;

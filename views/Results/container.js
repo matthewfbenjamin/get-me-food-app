@@ -7,8 +7,8 @@ import Main from './main'
 import { actions } from '../../data'
 class Container extends Component {
   componentDidMount() {
-    const { searchTerm, location, searchRadius, money } = this.props
-    // this.props.dataActions.getResults(searchTerm, location.latitude, location.longitude, searchRadius, money.toString())
+    const { searchTerm, location, searchRadius, money } = this.props.data
+    this.props.dataActions.getResults(searchTerm, location.latitude, location.longitude, searchRadius, money.toString())
   }
   
   componentDidUpdate(prevProps) {

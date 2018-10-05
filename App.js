@@ -12,10 +12,10 @@ export default class App extends Component {
     return (
       <Provider store={store}>
         <View style={styles.container}>
-          {/* <ReduxRouter navigator={ReduxNavigator} /> */}
-          <Router>
+          <ReduxRouter navigator={ReduxNavigator} />
+          {/* <Router>
             {routes}
-          </Router>
+          </Router> */}
         </View>
       </Provider>
     )
