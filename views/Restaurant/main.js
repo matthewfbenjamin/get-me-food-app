@@ -1,37 +1,37 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
-
+import { View, Text, StyleSheet } from 'react-native';
+import Button from '../components/Button'
 const Main = (props) => {
   return (
     <View style={styles.container}>
-      <Text>
-        Restaurant Page
-      </Text>
-      <Button
-        onPress={props.dataActions.setCafe}
-        title="Cafes"
-        color="#841584"
-        accessibilityLabel="Cafes"
-      />
-      <Button
-        onPress={props.dataActions.setRestaurant}
-        title="Restaurants"
-        color="#841584"
-        accessibilityLabel="Restaurants"
-      />
-      <Button
-        onPress={props.dataActions.setBar}
-        title="Bars"
-        color="#841584"
-        accessibilityLabel="Bars"
-      />
+      <View style={{flex: 1}} />
+      <View style={styles.buttonWrapper}>
+        <Button
+          onPress={props.dataActions.setCafe}
+          title="Cafes"
+        />
+        <Button
+          onPress={props.dataActions.setRestaurant}
+          title="Restaurants"
+        />
+        <Button
+          onPress={props.dataActions.setBar}
+          title="Bars"
+        />
+      </View>
+      <View style={{flex: 2}} />
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    backgroundColor: '#BA5C12',
+  },
+  buttonWrapper: {
+    flex: 2,
+    justifyContent: 'space-around',
   }
 })
 

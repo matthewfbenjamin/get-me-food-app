@@ -7,11 +7,12 @@ import Main from './main'
 import { actions } from '../../data'
 class Container extends Component {
   componentDidMount () {
-    // console.log(navigator.geolocation)
     this.props.dataActions.getLocation(navigator)
   }
 
   componentDidUpdate (prevProps) {
+    // console.log(prevProps)
+    // console.log(this.props)
     if (prevProps.searchTerm !== this.props.searchTerm) {
         routerActions.distance()
       }
@@ -25,8 +26,9 @@ class Container extends Component {
 }
 
 const mapStateToProps = state => {
+  // console.log(state)
   return {
-    searchTerm: state.searchTerm,
+    searchTerm: state.data.searchTerm,
   }
 }
 
