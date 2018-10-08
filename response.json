@@ -1,0 +1,864 @@
+{
+    "businesses": [
+        {
+            "id": "xTnivXEdEtXrnhp-z4JGvg",
+            "alias": "la-parisienne-new-york-5",
+            "name": "La Parisienne",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/8i6Hgi2iOA06CgDK8ED4pQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/la-parisienne-new-york-5?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 177,
+            "categories": [
+                {
+                    "alias": "cafes",
+                    "title": "Cafes"
+                },
+                {
+                    "alias": "french",
+                    "title": "French"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 40.70961,
+                "longitude": -74.0093799
+            },
+            "transactions": [
+                "pickup",
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "9 Maiden Ln",
+                "address2": null,
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10038",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "9 Maiden Ln",
+                    "New York, NY 10038"
+                ]
+            },
+            "phone": "+16467564911",
+            "display_phone": "(646) 756-4911",
+            "distance": 450.6092052184947
+        },
+        {
+            "id": "GlPJPpKvPR4d8dmcSEYpdA",
+            "alias": "takahachi-bakery-new-york",
+            "name": "Takahachi Bakery",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/qm76D8aDwBNw8w6YsWBvvA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/takahachi-bakery-new-york?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 764,
+            "categories": [
+                {
+                    "alias": "bakeries",
+                    "title": "Bakeries"
+                },
+                {
+                    "alias": "japanese",
+                    "title": "Japanese"
+                },
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": 40.71393,
+                "longitude": -74.00822
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "25 Murray St",
+                "address2": "",
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10007",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "25 Murray St",
+                    "New York, NY 10007"
+                ]
+            },
+            "phone": "+12127915550",
+            "display_phone": "(212) 791-5550",
+            "distance": 234.61919779655258
+        },
+        {
+            "id": "uk34HIU-ILX2A-FRs1Or3g",
+            "alias": "kaffe-1668-south-new-york",
+            "name": "Kaffe 1668 South",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/qprmeh1KnhY5JfPWBwkVeQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/kaffe-1668-south-new-york?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 662,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": 40.715171,
+                "longitude": -74.010925
+            },
+            "transactions": [
+                "pickup",
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "275 Greenwich St",
+                "address2": "",
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10007",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "275 Greenwich St",
+                    "New York, NY 10007"
+                ]
+            },
+            "phone": "+12126933750",
+            "display_phone": "(212) 693-3750",
+            "distance": 497.8331883104274
+        },
+        {
+            "id": "OQOr0DE1HtSNfxO5_mwfFg",
+            "alias": "five-and-dime-new-york",
+            "name": "Five & Dime",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/lmY5ijyP-pOuFZa8OhzJUQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/five-and-dime-new-york?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 44,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                },
+                {
+                    "alias": "cocktailbars",
+                    "title": "Cocktail Bars"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 40.7126429155284,
+                "longitude": -74.0080474702053
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "8 Park Pl",
+                "address2": "",
+                "address3": null,
+                "city": "New York",
+                "zip_code": "10007",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "8 Park Pl",
+                    "New York, NY 10007"
+                ]
+            },
+            "phone": "+12124333463",
+            "display_phone": "(212) 433-3463",
+            "distance": 189.20113310878313
+        },
+        {
+            "id": "ejZjFbR_Z3He5pi699eJKg",
+            "alias": "birch-coffee-new-york-10",
+            "name": "Birch Coffee",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/prVCcWpWBsU657KVbKhr2w/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/birch-coffee-new-york-10?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 48,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": 40.71084,
+                "longitude": -74.005672
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "8 Spruce St",
+                "address2": null,
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10038",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "8 Spruce St",
+                    "New York, NY 10038"
+                ]
+            },
+            "phone": "+12126861444",
+            "display_phone": "(212) 686-1444",
+            "distance": 216.7727939391493
+        },
+        {
+            "id": "aZ0S4F4RG3b4sYkkZbzwkw",
+            "alias": "proof-coffee-roasters-new-york",
+            "name": "PROOF Coffee Roasters",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/r11Yhuyfs9BPuni6lmskUg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/proof-coffee-roasters-new-york?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 65,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 40.7094499,
+                "longitude": -74.0086
+            },
+            "transactions": [
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "65 Nassau St",
+                "address2": null,
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10038",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "65 Nassau St",
+                    "New York, NY 10038"
+                ]
+            },
+            "phone": "+12122333985",
+            "display_phone": "(212) 233-3985",
+            "distance": 433.95314724583295
+        },
+        {
+            "id": "m-G-0zB7Gqdh9_cOGHeq1w",
+            "alias": "pisillo-italian-cafe-new-york-3",
+            "name": "Pisillo Italian Cafe",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/8slJtAHuPCd1bH7E-aHs8A/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/pisillo-italian-cafe-new-york-3?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 24,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                },
+                {
+                    "alias": "bakeries",
+                    "title": "Bakeries"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 40.71051,
+                "longitude": -74.00772
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "99 Nassau St",
+                "address2": "",
+                "address3": null,
+                "city": "New York",
+                "zip_code": "10038",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "99 Nassau St",
+                    "New York, NY 10038"
+                ]
+            },
+            "phone": "",
+            "display_phone": "",
+            "distance": 287.97232745006886
+        },
+        {
+            "id": "nKpHJSu7xbGyerOjfLRzfA",
+            "alias": "gotan-new-york",
+            "name": "Gotan",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/-TSHQlcSujBEUyFG97ZaDg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/gotan-new-york?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 319,
+            "categories": [
+                {
+                    "alias": "cafes",
+                    "title": "Cafes"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                },
+                {
+                    "alias": "desserts",
+                    "title": "Desserts"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": 40.719255,
+                "longitude": -74.006607
+            },
+            "transactions": [
+                "pickup",
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "130 Franklin St",
+                "address2": "",
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10013",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "130 Franklin St",
+                    "New York, NY 10013"
+                ]
+            },
+            "phone": "+12124315200",
+            "display_phone": "(212) 431-5200",
+            "distance": 722.4037496841362
+        },
+        {
+            "id": "kA98xP8HiJ_-fVaM7RECLw",
+            "alias": "laughing-man-coffee-and-tea-new-york-3",
+            "name": "Laughing Man Coffee & Tea",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/ynEe74WNJ2EVtGKWSixULw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/laughing-man-coffee-and-tea-new-york-3?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 186,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 40.71731,
+                "longitude": -74.01016
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "184 Duane St",
+                "address2": "",
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10013",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "184 Duane St",
+                    "New York, NY 10013"
+                ]
+            },
+            "phone": "+12126801111",
+            "display_phone": "(212) 680-1111",
+            "distance": 608.8012469244909
+        },
+        {
+            "id": "DE0ROwygh-86i4s-WLp8wQ",
+            "alias": "maman-soho-new-york",
+            "name": "Maman Soho",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/TC_kNRwbrmj9YB6NyJeSBg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/maman-soho-new-york?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 391,
+            "categories": [
+                {
+                    "alias": "cafes",
+                    "title": "Cafes"
+                },
+                {
+                    "alias": "bakeries",
+                    "title": "Bakeries"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": 40.72028,
+                "longitude": -73.9984
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "239 Centre St",
+                "address2": null,
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10013",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "239 Centre St",
+                    "New York, NY 10013"
+                ]
+            },
+            "phone": "+12122260700",
+            "display_phone": "(212) 226-0700",
+            "distance": 1050.1496173552946
+        },
+        {
+            "id": "hSpJ_t0hVN3jxA0SlGPQqQ",
+            "alias": "jacks-stir-brew-coffee-new-york-9",
+            "name": "Jack's Stir Brew Coffee",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/RsfcoEB4xhabmP3tRURL-A/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/jacks-stir-brew-coffee-new-york-9?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 13,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                },
+                {
+                    "alias": "bakeries",
+                    "title": "Bakeries"
+                },
+                {
+                    "alias": "organic_stores",
+                    "title": "Organic Stores"
+                }
+            ],
+            "rating": 5,
+            "coordinates": {
+                "latitude": 40.71628947112,
+                "longitude": -74.0098278969526
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "139 Reade St",
+                "address2": "",
+                "address3": null,
+                "city": "New York",
+                "zip_code": "10013",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "139 Reade St",
+                    "New York, NY 10013"
+                ]
+            },
+            "phone": "+12125711700",
+            "display_phone": "(212) 571-1700",
+            "distance": 508.07026045228446
+        },
+        {
+            "id": "u0bYCPlbJ85_lDjnZQ_e3w",
+            "alias": "kaigo-coffee-room-new-york-4",
+            "name": "Kaigo Coffee Room",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/b6xzD6icNoM9SJ9PnYILeQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/kaigo-coffee-room-new-york-4?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 104,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 40.7187029822397,
+                "longitude": -74.0004725370878
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "120C Lafayette St",
+                "address2": "",
+                "address3": null,
+                "city": "New York",
+                "zip_code": "10013",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "120C Lafayette St",
+                    "New York, NY 10013"
+                ]
+            },
+            "phone": "+16465045353",
+            "display_phone": "(646) 504-5353",
+            "distance": 805.8123276992242
+        },
+        {
+            "id": "-MDpSeMiCsvfz9TueedWwg",
+            "alias": "la-colombe-coffee-new-york-3",
+            "name": "La Colombe Coffee",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/qyO6WCQABB4zXFPFTJp53w/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/la-colombe-coffee-new-york-3?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 131,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 40.7056896627839,
+                "longitude": -74.0083486272612
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "67 Wall St",
+                "address2": "",
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10005",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "67 Wall St",
+                    "New York, NY 10005"
+                ]
+            },
+            "phone": "+12122200415",
+            "display_phone": "(212) 220-0415",
+            "distance": 812.9876930151788
+        },
+        {
+            "id": "Wa1y0Xu9ma8dx_UWmyxPmA",
+            "alias": "blue-bottle-coffee-new-york-12",
+            "name": "Blue Bottle Coffee",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ZzC9yXHJqBeVYHICAKK4Lg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/blue-bottle-coffee-new-york-12?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 18,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 5,
+            "coordinates": {
+                "latitude": 40.710745,
+                "longitude": -74.012136
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "150 Greenwich St",
+                "address2": "",
+                "address3": null,
+                "city": "New York",
+                "zip_code": "10007",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "150 Greenwich St",
+                    "New York, NY 10007"
+                ]
+            },
+            "phone": "+15106533394",
+            "display_phone": "(510) 653-3394",
+            "distance": 566.3443270456667
+        },
+        {
+            "id": "B9zMGNCHB7ysELjTKi4KEw",
+            "alias": "baked-new-york",
+            "name": "Baked",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/E7h5GhFq4GrmGLMWcHVo-Q/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/baked-new-york?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 277,
+            "categories": [
+                {
+                    "alias": "bakeries",
+                    "title": "Bakeries"
+                },
+                {
+                    "alias": "cafes",
+                    "title": "Cafes"
+                },
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": 40.7186,
+                "longitude": -74.00472
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "279 Church St",
+                "address2": "",
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10013",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "279 Church St",
+                    "New York, NY 10013"
+                ]
+            },
+            "phone": "+12127750345",
+            "display_phone": "(212) 775-0345",
+            "distance": 654.6563170154942
+        },
+        {
+            "id": "xs6umHYXU6S5oGEFY_VNsQ",
+            "alias": "bean-and-bean-new-york",
+            "name": "Bean & Bean",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BO9qoXCuK8XsvZU1Pjf6sA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/bean-and-bean-new-york?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 164,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": 40.7073064192213,
+                "longitude": -74.0122090517805
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "71 Broadway",
+                "address2": "",
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10006",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "71 Broadway",
+                    "New York, NY 10006"
+                ]
+            },
+            "phone": "+12124228083",
+            "display_phone": "(212) 422-8083",
+            "distance": 803.7943914183336
+        },
+        {
+            "id": "3tBKsvWCWpAQUNmQBzmWrg",
+            "alias": "arcade-bakery-new-york",
+            "name": "Arcade Bakery",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/RirFCsoXIxDcNxPLIdtsLQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/arcade-bakery-new-york?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 203,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                },
+                {
+                    "alias": "bakeries",
+                    "title": "Bakeries"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 40.7168697865532,
+                "longitude": -74.0066022711227
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "220 Church St",
+                "address2": "",
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10013",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "220 Church St",
+                    "New York, NY 10013"
+                ]
+            },
+            "phone": "+12122277895",
+            "display_phone": "(212) 227-7895",
+            "distance": 458.27724188117173
+        },
+        {
+            "id": "W4CZJ3a6qReD3_LWea6x0w",
+            "alias": "casa-toscana-fulton-center-new-york-3",
+            "name": "Casa Toscana Fulton Center",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/B88ZoJUpyppOxKsg9zmADA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/casa-toscana-fulton-center-new-york-3?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 11,
+            "categories": [
+                {
+                    "alias": "bakeries",
+                    "title": "Bakeries"
+                },
+                {
+                    "alias": "gelato",
+                    "title": "Gelato"
+                },
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 40.70983,
+                "longitude": -74.0091
+            },
+            "transactions": [
+                "pickup",
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "12 John St",
+                "address2": null,
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10038",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "12 John St",
+                    "New York, NY 10038"
+                ]
+            },
+            "phone": "+12122479323",
+            "display_phone": "(212) 247-9323",
+            "distance": 422.04786065436906
+        },
+        {
+            "id": "jDLKMWhHACb5w1DDtnW9ag",
+            "alias": "happy-bones-nyc-new-york",
+            "name": "Happy Bones NYC",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/kSOwLZFm7lEnPK4LZFMcwg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/happy-bones-nyc-new-york?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 259,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": 40.720726,
+                "longitude": -73.9970474
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "394 Broome St",
+                "address2": "",
+                "address3": "",
+                "city": "New York",
+                "zip_code": "10013",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "394 Broome St",
+                    "New York, NY 10013"
+                ]
+            },
+            "phone": "+12126733754",
+            "display_phone": "(212) 673-3754",
+            "distance": 1160.196285037643
+        },
+        {
+            "id": "1jT3p3mzWChFhtPsTJyrog",
+            "alias": "boundless-plains-espresso-new-york",
+            "name": "Boundless Plains Espresso",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/miT5AnRVcmhspHfcWijf5w/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/boundless-plains-espresso-new-york?adjust_creative=AHz3sGxkZjAzv8uu0Q9hqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=AHz3sGxkZjAzv8uu0Q9hqg",
+            "review_count": 59,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                },
+                {
+                    "alias": "cafes",
+                    "title": "Cafes"
+                },
+                {
+                    "alias": "australian",
+                    "title": "Australian"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 40.70797,
+                "longitude": -74.01378
+            },
+            "transactions": [
+                "pickup",
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "19 Rector St",
+                "address2": "",
+                "address3": null,
+                "city": "New York",
+                "zip_code": "10006",
+                "country": "US",
+                "state": "NY",
+                "display_address": [
+                    "19 Rector St",
+                    "New York, NY 10006"
+                ]
+            },
+            "phone": "+16463704399",
+            "display_phone": "(646) 370-4399",
+            "distance": 847.6327572944283
+        }
+    ],
+    "total": 119,
+    "region": {
+        "center": {
+            "longitude": -74.005974,
+            "latitude": 40.712776
+        }
+    }
+}

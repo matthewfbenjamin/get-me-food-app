@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import { Actions as routerActions } from 'react-native-router-flux';
 import { bindActionCreators } from 'redux'
 
+import { normalize, schema } from 'normalizr'
+import fakeData from '../../response.json'
+
 import Main from './main'
 import { actions } from '../../data'
 class Container extends Component {

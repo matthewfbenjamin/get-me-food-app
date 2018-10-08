@@ -13,7 +13,8 @@ const initState = {
   offset: 0,
   results: {
     loading: true,
-    results: {},
+    resultsArray: [],
+    resultsObj: {}
   }
 }
 
@@ -95,10 +96,27 @@ export default function reducer(state = initState, action) {
     case c.GET_RESULTS:
       return {
         ...state,
+      }
+    case c.SET_RESULTS_BEGIN:
+      return {
+        ...state
+      }
+    case c.SET_RESULTS_SUCCESS:
+      return {
+        ...state,
         results: {
           ...state.results,
-          loading: true,
+          resultsArray: [...state.results.resultsArray, ...action.data.result.businesses],
+          resultsObj: {
+            ...state.results.resultsObj,
+            ...action.data.entities.businesses
+          },
         }
+      }
+    case c.UPDATE_OFFSET:
+      return {
+        ...state,
+        offset: action.newOffset,
       }
     default:
       return state;

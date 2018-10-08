@@ -7,7 +7,7 @@ import Main from './main'
 import { actions } from '../../data'
 class Container extends Component {
   componentDidUpdate(prevProps) {
-    if (prevProps.searchRadius !== this.props.searchRadius) {
+    if (prevProps.searchRadius !== this.props.searchRadius && this.props.searchRadius) {
       routerActions.money()
     }
     if (this.props.scene === 'distance' && prevProps.scene === 'money') {
@@ -24,7 +24,8 @@ class Container extends Component {
 
 const mapStateToProps = state => {
   return {
-    searchRadius: state.data.searchRadius
+    searchRadius: state.data.searchRadius,
+    scene: state.router.scene,
   }
 }
 
