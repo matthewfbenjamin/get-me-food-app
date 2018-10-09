@@ -12,8 +12,8 @@ import routerReducer from './router';
 import routes from './routes'
 
 const AppNavigator = RouterActions.create(routes)
-// const initialState = AppNavigator.router.getStateForAction(AppNavigator.router.getActionForPathAndParams('restaurant'))
-const initialState = AppNavigator.router.getStateForAction(AppNavigator.router.getActionForPathAndParams('results'))
+const initialState = AppNavigator.router.getStateForAction(AppNavigator.router.getActionForPathAndParams('restaurant'))
+// const initialState = AppNavigator.router.getStateForAction(AppNavigator.router.getActionForPathAndParams('results'))
 
 const navReducer = (state = initialState, action) => {
   const nextState = AppNavigator.router.getStateForAction(action, state);

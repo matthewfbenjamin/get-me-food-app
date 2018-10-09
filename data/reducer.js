@@ -11,6 +11,7 @@ const initState = {
   money: [],
   limit: 20,
   offset: 0,
+  searchRadius: 0,
   results: {
     loading: true,
     resultsArray: [],
@@ -24,7 +25,6 @@ export default function reducer(state = initState, action) {
       return {
         ...state,
         searchTerm: 'cafe',
-        searchRadius: 0,
       }
     case c.SET_RESTAURANT:
       return {

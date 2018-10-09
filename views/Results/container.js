@@ -35,7 +35,7 @@ class Container extends Component {
   }
 
   showNextCard = () => {
-    const newIdx = this.state.cardIdx++
+    const newIdx = this.state.cardIdx + 1
     const newCardId = this.props.data.results.resultsArray[newIdx]
     const newCardToShow = this.props.data.results.resultsObj[newCardId]
     this.setState({
@@ -49,6 +49,7 @@ class Container extends Component {
       <Main
         {...this.props}
         {...this.state}
+        showNextCard={this.showNextCard}
       />
     );
   }
