@@ -23,12 +23,13 @@ const createAddress = (location) => {
 }
 
 const Main = (props) => {
+  console.log(props)
   let { cardToShow, data } = props
   const { searchRadius, location } = data
   /*
   cardToShow = {
     alias: "blue-spoon-coffee-new-york",
-    categories: [{ "alias": "delis", "title": "Delis" }],
+    "categories": [ { "alias": "beer_and_wine", "title": "Beer, Wine & Spirits" }, { "alias": "sandwiches", "title": "Sandwiches" } ],
     coordinates: { latitude: 40.7143174856901, longitude: -74.0067286044359 },
     display_phone: "(212) 619-7230",
     distance: 188.29334458003626,
@@ -69,11 +70,9 @@ const Main = (props) => {
     directionType = 'walking'
   }
 
-  console.log(cardToShow.image_url)
-
   return (
     <View style={globalStyles.viewContainer}>
-      {cardToShow.name ?
+      {cardToShow.name || !props.data.results.loading ?
         <View style={{flex: 1}}>
           <View style={styles.cardContainer}>
             <CardView
@@ -82,35 +81,38 @@ const Main = (props) => {
               cardMaxElevation={3}
               cornerRadius={5}>
               <View style={styles.insideCardContainer}>
-                <Text style={[{ fontSize: H1 }, styles.topSection]}>{cardToShow.name}</Text>
-                <View>
-                  {cardToShow.categories.map(category => <Text style={[{ fontSize: H2 }, styles.topSection]} key={category.alias}>{category.title}</Text>)}
+                <View style={{ flex: 2, alignItems: 'center'}}>
+                  <Text style={[{ fontSize: H1 }, styles.topSection]}>{cardToShow.name}</Text>
+                  <View style={[styles.textContainer, { flexWrap: 'wrap' }]}>
+                    {cardToShow.categories.map((category, idx) => <Text style={[{ fontSize: H2 }, styles.topSection]} key={category.alias}>{`${category.title}${idx !== cardToShow.categories.length - 1 ? ',' : ''}`}</Text>)}
+                  </View>
+                  <View style={[styles.starContainer, styles.topSection]}>
+                    <StarRating
+                      buttonStyle={{
+                        borderRadius: 8,
+                        borderWidth: 3,
+                        borderColor: '#d32323',
+                        paddingHorizontal: 6,
+                        paddingVertical: 4,
+                        marginRight: 2,
+                      }}
+                      disabled
+                      emptyStar={'ios-star-outline'}
+                      fullStar={'ios-star'}
+                      halfStar={'ios-star-half'}
+                      iconSet={'Ionicons'}
+                      maxStars={5}
+                      rating={cardToShow.rating}
+                      fullStarColor={'#d32323'}
+                      starSize={25}
+                    />
+                  </View>
                 </View>
-                <View style={[styles.starContainer, styles.topSection]}>
-                  <StarRating
-                    buttonStyle={{
-                      borderRadius: 8,
-                      borderWidth: 3,
-                      borderColor: '#d32323',
-                      paddingHorizontal: 6,
-                      paddingVertical: 4,
-                      marginRight: 2,
-                    }}
-                    disabled
-                    emptyStar={'ios-star-outline'}
-                    fullStar={'ios-star'}
-                    halfStar={'ios-star-half'}
-                    iconSet={'Ionicons'}
-                    maxStars={5}
-                    rating={cardToShow.rating}
-                    fullStarColor={'#d32323'}
-                    starSize={25}
-                  />
-                </View>
+                {cardToShow.image_url &&
                 <Image
                   resizeMode="contain"
                   style={styles.image}
-                  source={{ uri: cardToShow.image_url }}/>
+                  source={{ uri: cardToShow.image_url }} />}
                 <View style={styles.linkOutSection}>
                   <TouchableOpacity onPress={() => Communications.phonecall(cardToShow.phone, true)}>
                     <View style={styles.holder}>
@@ -126,7 +128,7 @@ const Main = (props) => {
               </View>
             </CardView>
           </View>
-          <View style={styles.bottomContainer}>
+          <View style={styles.textContainer}>
             <TouchableOpacity onPress={props.showNextCard}>
               <View style={{ borderWidth: 4, borderColor: purple, backgroundColor: purple, borderRadius: 50, height: 100, width: 100, justifyContent: 'center', alignItems: 'center', display: 'flex' }}>
                 <Ionicons name="md-close" size={50} color={peach} />
@@ -169,7 +171,7 @@ const styles = StyleSheet.create({
   },
   topSection: {
     // flex: 1,
-    paddingVertical: 5,
+    paddingVertical: 10,
   },
   starContainer: {
     width: '50%',
@@ -189,9 +191,8 @@ const styles = StyleSheet.create({
     flex: 3,
     height: undefined,
     width: undefined,
-    paddingTop: 5,
   },
-  bottomContainer: {
+  textContainer: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-around',

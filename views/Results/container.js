@@ -26,18 +26,20 @@ class Container extends Component {
       const cardToShow = this.props.data.results.resultsObj[cardToShowId]
       this.setState({ cardToShow })
     }
-    if (prevProps.data.results.resultsArray.length - 1 === this.state.newIdx) {
-      const { searchTerm, location, searchRadius, money, limit, offset } = this.props.data
-      const newOffset = offset + limit
-      this.props.dataActions.getResults(searchTerm, location.latitude, location.longitude, searchRadius, money.toString(), limit, newOffset)
-      this.props.dataActions.updateOffset(newOffset)
-    }
   }
 
   showNextCard = () => {
     const newIdx = this.state.cardIdx + 1
     const newCardId = this.props.data.results.resultsArray[newIdx]
     const newCardToShow = this.props.data.results.resultsObj[newCardId]
+
+    if (this.props.data.results.resultsArray.length - 1 === newIdx) {
+      const { searchTerm, location, searchRadius, money, limit, offset } = this.props.data
+      const newOffset = offset + limit
+      this.props.dataActions.getResults(searchTerm, location.latitude, location.longitude, searchRadius, money.toString(), limit, newOffset)
+      this.props.dataActions.updateOffset(newOffset)
+    }
+
     this.setState({
       cardIdx: newIdx,
       cardToShow: newCardToShow,
