@@ -23,7 +23,6 @@ const createAddress = (location) => {
 }
 
 const Main = (props) => {
-  console.log(props)
   let { cardToShow, data } = props
   const { searchRadius, location } = data
   /*
@@ -70,6 +69,11 @@ const Main = (props) => {
     directionType = 'walking'
   }
 
+  var categoryString = ''
+  for (const i in cardToShow.categories) {
+    categoryString += `${cardToShow.categories[i].title}${parseInt(i, 10) !== (cardToShow.categories.length - 1) ? ', ' : ' '}`
+  }
+
   return (
     <View style={globalStyles.viewContainer}>
       {cardToShow.name || !props.data.results.loading ?
@@ -83,9 +87,7 @@ const Main = (props) => {
               <View style={styles.insideCardContainer}>
                 <View style={{ flex: 2, alignItems: 'center'}}>
                   <Text style={[{ fontSize: H1 }, styles.topSection]}>{cardToShow.name}</Text>
-                  <View style={[styles.textContainer, { flexWrap: 'wrap' }]}>
-                    {cardToShow.categories.map((category, idx) => <Text style={[{ fontSize: H2 }, styles.topSection]} key={category.alias}>{`${category.title}${idx !== cardToShow.categories.length - 1 ? ',' : ''}`}</Text>)}
-                  </View>
+                  <Text style={[{ fontSize: H2 }, styles.topSection]}>{categoryString}</Text>)
                   <View style={[styles.starContainer, styles.topSection]}>
                     <StarRating
                       buttonStyle={{
@@ -188,7 +190,7 @@ const styles = StyleSheet.create({
     color: '#0000EE',
   },
   image: {
-    flex: 3,
+    flex: 2,
     height: undefined,
     width: undefined,
   },
