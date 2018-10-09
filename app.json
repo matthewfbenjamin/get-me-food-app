@@ -1,4 +1,7 @@
 {
   "name": "get-me-food-app",
-  "displayName": "get-me-food-app"
+  "displayName": "get-me-food-app",
+  "expo": {
+    "sdkVersion": "27.0.0"
+  }
 }

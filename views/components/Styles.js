@@ -20,6 +20,10 @@ export const globalStyles = StyleSheet.create({
   }
 })
 
+export const ButtonText = 20
+export const H1 = 30
+export const H2 = 25
+
 export const peach = '#FFB86F'
 export const yellow = '#E0CA3C'
 export const orange = '#BA5C12'
